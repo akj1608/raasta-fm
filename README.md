@@ -17,7 +17,7 @@
 
 ## What is this?
 
-Raasta Radio is a single-page ambient music player inspired by [saloon.wtf](https://saloon.wtf). Open the link and you're on a moonlit national highway — painted truck rolling past, dhaba glowing roadside, NH milestone fading into the dark — with 200+ classic Bollywood tracks autoplaying in the background.
+Raasta Radio is a single-page ambient music player. Open the link and you're on a moonlit national highway — painted truck rolling past, dhaba glowing roadside, NH milestone fading into the dark — with 200+ classic Bollywood tracks autoplaying in the background.
 
 No login. No app install. Just vibes.
 
