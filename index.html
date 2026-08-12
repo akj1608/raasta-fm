@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Raasta Radio — nostalgic Indian highway nights. Bollywood road trip music before you became fancy.">
+  <meta name="theme-color" content="#0a0a12">
+  <title>Raasta Radio · raasta.fm</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛣️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="sky">
+      <div class="aurora"></div>
+      <div class="stars"></div>
+      <div class="moon"></div>
+    </div>
+
+    <div class="power-lines">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 40 Q360 80 720 35 T1440 50" fill="none" stroke="rgba(40,40,50,0.6)" stroke-width="2"/>
+        <path d="M0 55 Q360 95 720 50 T1440 65" fill="none" stroke="rgba(40,40,50,0.4)" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <div class="mountains">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="rgba(8,12,24,0.9)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,261.3C672,256,768,224,864,213.3C960,203,1056,213,1152,218.7C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/>
+        <path fill="rgba(12,16,32,0.85)" d="M0,256L80,245.3C160,235,320,213,480,218.7C640,224,800,256,960,261.3C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"/>
+      </svg>
+    </div>
+
+    <!-- Roadside dhaba shack -->
+    <div class="roadside-stop">
+      <div class="stop-roof"></div>
+      <div class="stop-wall">
+        <div class="stop-window"></div>
+        <div class="stop-door"></div>
+      </div>
+      <div class="stop-counter">
+        <div class="kettle"></div>
+      </div>
+      <div class="string-lights">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <span class="milestone-nh">NH</span>
+      <span class="milestone-km">44</span>
+      <span class="milestone-city">दिल्ली ← → मुंबई</span>
+    </div>
+
+    <div class="billboard">
+      <p class="billboard-hindi" id="billboard-hindi">बुरी नज़र वाले</p>
+      <p class="billboard-sub" id="billboard-sub">तेरा मुँह काला</p>
+    </div>
+
+    <div class="highway">
+      <div class="road-shoulder road-shoulder-left"></div>
+      <div class="road-shoulder road-shoulder-right"></div>
+      <div class="road"></div>
+      <div class="road-edge road-edge-left"></div>
+      <div class="road-edge road-edge-right"></div>
+      <div class="road-lines"></div>
+      <div class="road-glow"></div>
+    </div>
+
+    <!-- Painted Indian truck -->
+    <div class="truck-wrap">
+      <svg class="truck" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="truckBody" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e63946"/>
+            <stop offset="50%" stop-color="#f4a261"/>
+            <stop offset="100%" stop-color="#2a9d8f"/>
+          </linearGradient>
+          <linearGradient id="truckCab" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd166"/>
+            <stop offset="100%" stop-color="#e76f51"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="52" width="130" height="28" rx="3" fill="url(#truckBody)" stroke="#1a1a1a" stroke-width="1.5"/>
+        <rect x="138" y="38" width="48" height="42" rx="4" fill="url(#truckCab)" stroke="#1a1a1a" stroke-width="1.5"/>
+        <rect x="142" y="44" width="22" height="16" rx="2" fill="rgba(180,220,255,0.5)" stroke="#333" stroke-width="1"/>
+        <circle cx="40" cy="82" r="10" fill="#222" stroke="#444" stroke-width="2"/>
+        <circle cx="40" cy="82" r="4" fill="#666"/>
+        <circle cx="120" cy="82" r="10" fill="#222" stroke="#444" stroke-width="2"/>
+        <circle cx="120" cy="82" r="4" fill="#666"/>
+        <circle cx="168" cy="82" r="10" fill="#222" stroke="#444" stroke-width="2"/>
+        <circle cx="168" cy="82" r="4" fill="#666"/>
+        <text id="truck-line-top" x="70" y="38" text-anchor="middle" fill="#ffeb3b" font-size="7" font-weight="bold" font-family="system-ui">बुरी नज़र वाले</text>
+        <text id="truck-line-main" x="70" y="48" text-anchor="middle" fill="#fff" font-size="7" font-weight="bold" font-family="system-ui">MOOH KALA</text>
+        <path d="M20 52 Q70 30 120 52" fill="none" stroke="#ffeb3b" stroke-width="1.5" opacity="0.7"/>
+        <circle cx="30" cy="58" r="4" fill="#e63946" stroke="#ffeb3b" stroke-width="1"/>
+        <circle cx="110" cy="58" r="4" fill="#2a9d8f" stroke="#ffeb3b" stroke-width="1"/>
+      </svg>
+      <div class="truck-headlights"></div>
+      <div class="truck-dust"></div>
+    </div>
+
+    <div class="light-streak streak-1"></div>
+    <div class="light-streak streak-2"></div>
+
+    <div class="street-lamp">
+      <div class="lamp-pole"></div>
+      <div class="lamp-head"></div>
+      <div class="lamp-glow"></div>
+    </div>
+
+    <div class="road-glow"></div>
+    <div class="chai-steam">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="neon-sign">
+      <span class="neon-text">रास्ता</span>
+      <span class="neon-sub">OPEN 24 HRS · चाय मिलेगी</span>
+    </div>
+
+    <div class="lantern lantern-left"></div>
+    <div class="lantern lantern-right"></div>
+
+    <div class="dust-particles"></div>
+    <div class="film-grain"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <header class="top-bar">
+    <div class="clock" id="clock" aria-live="polite">--:-- IST</div>
+    <div class="online-count" aria-label="Listeners online">
+      <span class="online-dot" aria-hidden="true"></span>
+      <span id="online-count">42</span> on the road
+    </div>
+    <nav class="playlist-links" aria-label="External playlists">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DXbITWG1oJSN7" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Spotify
+      </a>
+      <a href="https://music.youtube.com/search?q=bollywood+highway+road+trip+songs" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YT Music
+      </a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <p class="hero-eyebrow" id="road-quote">बुरी नज़र वाले, तेरा मुँह काला</p>
+    <h1 class="title">
+      <span class="title-main">Raasta Radio</span>
+      <span class="title-domain">raasta.fm</span>
+    </h1>
+    <p class="tagline">Bollywood road-trip radio for the nights<br>before you became fancy.</p>
+    <div class="vinyl-container">
+      <div class="radio-dial" aria-hidden="true">
+        <span class="dial-mark"></span>
+        <span class="dial-mark"></span>
+        <span class="dial-mark"></span>
+        <span class="dial-label">FM</span>
+      </div>
+      <div class="vinyl" id="vinyl" aria-hidden="true">
+        <div class="vinyl-disc">
+          <div class="vinyl-grooves"></div>
+          <div class="vinyl-label" id="vinyl-label">
+            <img id="album-art" src="" alt="" width="120" height="120">
+          </div>
+        </div>
+      </div>
+      <div class="vinyl-reflection"></div>
+    </div>
+  </main>
+
+  <footer class="player" role="region" aria-label="Music player">
+    <div class="player-glass">
+      <div class="player-accent" aria-hidden="true"></div>
+      <div class="track-info">
+        <p class="track-title" id="track-title">Loading…</p>
+        <p class="track-artist" id="track-artist">—</p>
+      </div>
+
+      <div class="controls">
+        <button class="ctrl-btn" id="btn-prev" aria-label="Previous track" type="button">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6 6h2v12H6V6zm3.5 6l8.5 6V6l-8.5 6z"/></svg>
+        </button>
+        <button class="ctrl-btn ctrl-play" id="btn-play" aria-label="Play" type="button">
+          <span class="play-pause-icons" aria-hidden="true">
+            <svg class="icon-play" viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M8 5v14l11-7L8 5z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </span>
+        </button>
+        <button class="ctrl-btn" id="btn-next" aria-label="Next track" type="button">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6 18l8.5-6L6 6v12zm2.5-6l8.5 6V6l-8.5 6zM16 6v12h2V6h-2z"/></svg>
+        </button>
+      </div>
+
+      <div class="progress-wrap">
+        <span class="time" id="time-current">0:00</span>
+        <div class="progress-bar" id="progress-bar" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-thumb" id="progress-thumb"></div>
+        </div>
+        <span class="time" id="time-total">0:00</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="yt-player" class="yt-hidden" aria-hidden="true"></div>
+
+  <a
+    href="https://ko-fi.com/akj1608"
+    class="kofi-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Support on Ko-fi"
+    title="Buy me a chai on Ko-fi"
+  >
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path fill="currentColor" d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-.776-1.642-.388-.48-.878-.86-1.432-1.109C17.31 2.88 16.674 2.75 16 2.75h-3.38c-.214 0-.4.086-.533.24L9.793 5.75H5.5c-.966 0-1.75.784-1.75 1.75v8.5c0 .966.784 1.75 1.75 1.75h13c.966 0 1.75-.784 1.75-1.75V8.5c0-.69-.4-1.286-.984-1.585zM16 4.25c.414 0 .8.161 1.09.453.29.292.453.678.453 1.092v.455H9.25V5.5c0-.414.161-.8.453-1.092A1.54 1.54 0 0 1 11 4.25h5zm3.5 11.75c0 .414-.161.8-.453 1.092A1.54 1.54 0 0 1 18 17.25H6c-.414 0-.8-.161-1.09-.453A1.54 1.54 0 0 1 4.25 16V7.5h15.5V16z"/>
+      <path fill="currentColor" d="M8.5 10.5c0 .828.672 1.5 1.5 1.5s1.5-.672 1.5-1.5S10.828 9 10 9s-1.5.672-1.5 1.5zm5 0c0 .828.672 1.5 1.5 1.5s1.5-.672 1.5-1.5S15.828 9 15 9s-1.5.672-1.5 1.5z"/>
+    </svg>
+  </a>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="playlist.js?v=8"></script>
+  <script src="app.js?v=8"></script>
+</body>
+</html>
