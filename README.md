@@ -8,7 +8,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/tracks-215-orange?style=flat-square" alt="215 tracks">
   <img src="https://img.shields.io/badge/stack-vanilla-111?style=flat-square" alt="Vanilla stack">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License">
 </p>
